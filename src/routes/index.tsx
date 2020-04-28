@@ -6,7 +6,7 @@ import AuthContext from '../context/auth';
 
 const Routes: React.FC = () => {
   const {signed} = useContext(AuthContext);
-  return signed ? <AppRoutes /> : <AuthRoutes />;
+  return signed ? <AuthRoutes /> : <AppRoutes />;
 };
 
 export default Routes;
